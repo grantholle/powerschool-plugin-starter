@@ -1,0 +1,6 @@
+<permission_mappings>
+  <permission name="/path/to/page.html">
+   <implies allow="get">/ws/schema/query/com.organization.plugin_name.entity.query_name</implies>
+   <implies allow="post">/ws/schema/table/table_name</implies>
+  </permission>
+</permission_mappings>

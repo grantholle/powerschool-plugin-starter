@@ -1,0 +1,16 @@
+<queries>
+  <query name="com.organization.plugin_name.entity.query_name" flattened="true">
+    <description></description>
+    <args>
+      <arg name="" required="" column="" />
+    </args>
+    <columns>
+      <column column=""></column>
+    </columns>
+    <sql>
+      <![CDATA[
+
+      ]]>
+    </sql>
+  </query>
+</queries>

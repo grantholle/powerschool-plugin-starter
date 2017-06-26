@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin version="0.0.1" name="" description="" xmlns="http://plugin.powerschool.pearson.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://plugin.powerschool.pearson.com plugin.xsd">
+
+  <oauth></oauth>
+
+  <publisher name="Grant Holle">
+    <contact email="hollegrant@gmail.com"/>
+  </publisher>
+
+  <access_request></access_request>
+</plugin>

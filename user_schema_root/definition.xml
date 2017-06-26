@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<psExtension xmlns="http://www.powerschool.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.powerschool.com psextension.xsd">
+  <extensionname>U_MY_EXTENSION</extensionname>
+  <extendedTable type="standalone" dbTableName="U_TABLE" comment="">
+    <field name="name" type="String" length="40" comment="Description"/>
+  </extendedTable>
+</psExtension>

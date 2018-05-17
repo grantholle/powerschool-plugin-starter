@@ -17,18 +17,30 @@ $ cd new-plugin-name
 $ rm -rf .git
 $ git init
 $ git add .
-$ git commit -m "Initial commit"
+$ git commit -m "Initial commit from cloning boilerplate"
+```
+
+Install npm dependency
+
+```
+$ npm i
 ```
 
 Start developing!
 
 ## Build zip file
 
-Use [this utility](https://www.npmjs.com/package/powerschool-plugin-builder) to build this plugin as a zip file that PS will accept.
+The below command will increment the plugin path version and build the plugin zip file into the `~/Downloads` directory.
 
 ```
-$ npm i -g powerschool-plugin-builder
-// Run in this repo's root
-// Outputs the zip file to the downloads folder
-$ pspb -o ~/Downloads
+$ npm run build
+```
+
+If the plugin has a companion database definition plugin, add the entry to `package.json`:
+
+```json
+"scripts": {
+  "build": "./node_modules/.bin/pspb -o ~/Downloads -i",
+  "build-d": "./node_modules/.bin/pspb -i /path/to/definition -o ~/Downloads -i"
+},
 ```

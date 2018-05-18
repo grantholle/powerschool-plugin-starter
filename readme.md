@@ -26,7 +26,7 @@ Install npm dependency
 $ npm i
 ```
 
-Start developing!
+Start developing! There is a [guide available](https://support.powerschool.com/article/66558) to walk you through _some_ parts of a plugin. It's mostly how to use the api, but also hits on a couple plugin components.
 
 ## Build zip file
 

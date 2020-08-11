@@ -1,7 +1,7 @@
 {
   "name": "plugin-boilerplate",
   "version": "1.0.0",
-  "description": "Contains a skeleton to use to begin a PS plugin.",
+  "description": "A plugin starter for PowerSchool.",
   "main": "index.js",
   "scripts": {
     "build": "./node_modules/.bin/pspb -o ~/Downloads -i",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@git.ldi.global:7999/ps/plugin-boilerplate.git"
+    "url": "https://github.com/grantholle/powerschool-plugin-starter.git"
   },
-  "author": "Grant Holle <grant.holle@ldiglobal.org>",
+  "author": "Grant Holle <grantholle.com>",
   "license": "ISC",
   "dependencies": {
     "powerschool-plugin-builder": "^2.0.6"

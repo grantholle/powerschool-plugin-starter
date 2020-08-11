@@ -1,24 +1,39 @@
-# PowerSchool Plugin Boilerplate
+# PowerSchool Plugin Starter
 
-Contains a skeleton to use to begin a PS plugin.
+This contains the file structure for creating a PowerSchool plugin.
 
 ## Set up
+
+You will use this starter to create your own plugin. If you plan on creating database extensions, you will need to clone the starter twice because [a very old bug](https://support.powerschool.com/thread/17356).
+
+Priorities, I guess.
 
 ### Clone this repo
 
 ```
-$ git clone ssh://git@git.ldi.global:7999/ps/plugin-boilerplate.git new-plugin-name
+$ git clone https://github.com/grantholle/powerschool-plugin-starter.git my-plugin
 ```
 
 ### Clean up to make your own
 
+You'll need to remove the existing git history by removing the `.git` directory. If you're using source control, start tracking.
+
 ```
-$ cd new-plugin-name
+$ cd my-plugin
 $ rm -rf .git
+
+# Optional
 $ git init
 $ git add .
-$ git commit -m "Initial commit from cloning boilerplate"
+$ git commit -m "Initial commit from cloning starter"
 ```
+
+You will need to rename the files in the following directories:
+
+- MessageKeys
+- permissions_root
+- queries_root
+- user_schema_root
 
 ### Install npm dependencies
 
@@ -36,17 +51,8 @@ Start developing. There is a [guide available](https://support.powerschool.com/a
 
 ## Build zip file
 
-The below command will increment the plugin path version and build the plugin zip file into the `~/Downloads` directory.
+The below command will increment the plugin path version and build the plugin zip file into the `~/Downloads` directory. If you need to change the output directory, modify the `build` script entry in `package.json`.
 
 ```
 $ npm run build
-```
-
-If the plugin has a companion database definition plugin, add the entry to `package.json`:
-
-```json
-"scripts": {
-  "build": "./node_modules/.bin/pspb -o ~/Downloads -i",
-  "build-d": "./node_modules/.bin/pspb -i /path/to/definition -o ~/Downloads -i"
-},
 ```

@@ -1,0 +1,16 @@
+<changeListener>
+  <application name="UsersChanges" description="Subscription to Users and UsersCoreFields" />
+  <dataVersionSubscription>
+    <table name="USERS">
+      <column name="LASTFIRST" />
+      <column name="HOMEROOM" />
+      <column name="EMAIL_ADDR" />
+      <column name="GROUPVALUE" />
+      <column name="SSN" />
+      </table>
+    <table name="USERSCOREFIELDS">
+      <column name="DOB" />
+      <column name="GENDER" />
+    </table>
+  </dataVersionSubscription>
+</changeListener>

@@ -12,6 +12,8 @@ Priorities, I guess.
 
 ```
 $ git clone https://github.com/grantholle/powerschool-plugin-starter.git my-plugin
+
+$ npx degit grantholle/powerschool-plugin-starter#main my-plugin
 ```
 
 ### Clean up to make your own
